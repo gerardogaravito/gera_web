@@ -7,8 +7,7 @@ export const Header = () => {
       <Info>
         <Name>Gerardo Garavito García</Name>
         <Profession>Front-End Developer</Profession>
-        <Bio>Member of Platzi Master and <br/>learning to be a Software Engineer at UANL.</Bio>
-        <p style='color: white;'>Still working on it</p>
+        <Bio>Member of Platzi Master and <br/>learning to be a Software Engineer at UANL. <br/> Still working on it...</Bio>
       </Info>
     </Container>
   )
