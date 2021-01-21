@@ -6,9 +6,14 @@ export const colors = {
   gray: '#daddd8'
 }
 
-export const fronts = {
-  font_system: '',
-  font_mono: ''
+export const fonts = {
+  font_system: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";',
+	font_mono: 'jetbrains mono, monaco, helvetica',
+	h1: '36px',
+	h2: '24px',
+	h3: '18px',
+	p: '14px',
+	small: '12px',
 }
 
 // media queries
