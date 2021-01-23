@@ -27,6 +27,19 @@ export const Container = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  & :nth-child(5){
+    margin: 10px 0px 10px 40px;
+  }
+  & :nth-child(6){
+    margin: 10px 0px 10px 40px;
+  }
+  & :nth-child(7){
+    margin: 10px 0px 10px 40px;
+  }
+  & :nth-child(8){
+    margin: 10px 0px 10px 40px;
+  }
 `
 
 export const Skill = styled.p`
@@ -34,8 +47,8 @@ export const Skill = styled.p`
   width: 165px;
   display: flex;
   align-items: center;
-  margin: 10px 20px;
-
+  margin: 10px 0px;
+  
   & :first-child {
     margin-right: 5px;
   }
