@@ -1,28 +1,28 @@
 import React,{ useState, useEffect } from 'react'
-import Context  from '../Context'
+// import Context  from '../Context'
 
 import { Header } from '../components/Header'
 
 
 const Home = () => {
 
-  const [state, setState] = useState([])
+  // const [state, setState] = useState([])
 
-  useEffect(() => {
-    fetch('https://gerardogaravito.vercel.app/api/data', {
-      mode: 'no-cors',
-      headers: {
-        "Content-Type": "application/json"
-      },
-    })
-    .then(response => response.json())
-    .then(data => setState(data))
-  }, [])
+  // useEffect(() => {
+  //   fetch('https://gerardogaravito.vercel.app/api/data', {
+  //     mode: 'no-cors',
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     },
+  //   })
+  //   .then(response => response.json())
+  //   .then(data => setState(data))
+  // }, [])
 
-  console.log(state)
+  // console.log(state)
 
   return (
-      <Header />
+    <Header />
   )
 }
 

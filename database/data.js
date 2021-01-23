@@ -3,6 +3,7 @@ const data = {
     name: 'Gerardo',
     dadlast: 'Garavito',
     momlast: 'García',
+    profession: 'Front-End Developer',
     birth: {
       day: '10',
       month: 'April',

@@ -1,7 +1,7 @@
 // import App from 'next/app'
 import { GlobalStyle } from '../globalStyles/globalStyles'
 import { Layout } from '../components/Layout'
-import Context from '../Context'
+// import Context from '../Context'
 
 
 function MyApp({ Component, pageProps }) {
