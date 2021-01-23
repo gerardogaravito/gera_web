@@ -16,13 +16,26 @@ export const Info = styled.div`
 
 export const Name = styled.h1`
   color: ${colors.white};
+  margin-bottom: 5px;
 `
-export const Profession = styled.h2`
+export const Profession = styled.h3`
   color: ${colors.main};
   font-family: ${fonts.font_mono};
+  margin-bottom: 30px;
 `
 
 export const Bio = styled.p`
   color: ${colors.main};
   font-family: ${fonts.font_mono};
+  margin-bottom: 30px;
+`
+
+export const Network = styled.div`
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+`
+
+export const Anchor = styled.a`
+
 `

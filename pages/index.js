@@ -2,6 +2,7 @@ import React,{ useState, useEffect } from 'react'
 // import Context  from '../Context'
 
 import { Header } from '../components/Header'
+import { Skills } from '../components/Skills'
 
 
 const Home = () => {
@@ -22,7 +23,10 @@ const Home = () => {
   // console.log(state)
 
   return (
-    <Header />
+    <React.Fragment>
+      <Header />
+      <Skills />
+    </React.Fragment>
   )
 }
 
