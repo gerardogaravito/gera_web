@@ -15,12 +15,12 @@ export const Section = styled.section`
 export const Title = styled.h2`
   color: ${colors.black};
   font-weight: bold;
-  width: 390px;
+  width: 370px;
 `
 
 export const Container = styled.div`
   height: 220px;
-  width: 450px;
+  width: 370px;
   display: flex;
   overflow: hidden;
   flex-direction: column;
