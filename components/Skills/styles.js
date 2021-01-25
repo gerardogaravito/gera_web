@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors } from '../../globalStyles/stylesVariables'
+import { colors, mediaQueries } from '../../globalStyles/stylesVariables'
 
 export const Section = styled.section`
   background-color: ${colors.main};
@@ -16,10 +16,15 @@ export const Title = styled.h2`
   color: ${colors.black};
   font-weight: bold;
   width: 370px;
+  margin-bottom: 20px;
+
+  @media ${mediaQueries.mobile} {
+    width: 165px;
+  }
 `
 
 export const Container = styled.div`
-  height: 220px;
+  height: 180px;
   width: 370px;
   display: flex;
   overflow: hidden;
@@ -39,6 +44,24 @@ export const Container = styled.div`
   }
   & :nth-child(8){
     margin: 10px 0px 10px 40px;
+  }
+
+  @media ${mediaQueries.mobile} {
+    height: auto;
+    width:165px;
+
+    & :nth-child(5){
+    margin: 10px 0px;
+  }
+  & :nth-child(6){
+    margin: 10px 0px;
+  }
+  & :nth-child(7){
+    margin: 10px 0px;
+  }
+  & :nth-child(8){
+    margin: 10px 0px;
+  }
   }
 `
 

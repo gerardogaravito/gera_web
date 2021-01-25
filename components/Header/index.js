@@ -1,4 +1,4 @@
-import { Container, Info, Name, Profession, Bio, Network, Anchor } from './styles'
+import { Section, Container, Name, Profession, Bio, Network, Anchor } from './styles'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { colors } from '../../globalStyles/stylesVariables'
@@ -29,8 +29,8 @@ export const Header = () => {
   }
 
   return(
-    <Container>
-      <Info>
+    <Section>
+      <Container>
         <Name>{personal.name} {personal.dadlast} {personal.momlast}</Name>
         <Profession>{personal.profession}</Profession>
         <Bio>Member of Platzi Master and <br/>learning to be a Software Engineer at UANL.</Bio>
@@ -45,7 +45,7 @@ export const Header = () => {
             <GrInstagram color={colors.main} size='25px'/>
           </Anchor>
         </Network>
-      </Info>
-    </Container>
+      </Container>
+    </Section>
   )
 }

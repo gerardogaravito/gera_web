@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { colors, fonts } from '../../globalStyles/stylesVariables'
+import { colors, fonts, mediaQueries } from '../../globalStyles/stylesVariables'
 
-export const Container = styled.section`
+export const Section = styled.section`
   width: 100%;
   height: 100vh;
   background-color: ${colors.black};
@@ -10,8 +10,12 @@ export const Container = styled.section`
   align-items: center;
 `
 
-export const Info = styled.div`
+export const Container = styled.div`
   text-align: justify;
+
+  @media ${mediaQueries.mobile} {
+    width: 240px;
+  }
 `
 
 export const Name = styled.h1`

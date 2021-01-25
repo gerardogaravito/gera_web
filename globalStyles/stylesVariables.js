@@ -18,7 +18,7 @@ export const fonts = {
 
 // media queries
 const mediaSize = {
-	mobile: '320px',
+	mobile: '420px',
 	tablet: '720px',
 	miniDesktop: '920px',
 	littleDesktop: '1315px',
