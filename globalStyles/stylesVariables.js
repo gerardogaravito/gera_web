@@ -32,3 +32,8 @@ export const mediaQueries = {
 	littleDesktop: `(max-width: ${mediaSize.littleDesktop})`,
 	desktop: `(max-width: ${mediaSize.desktop})`,
 };
+
+export const width = {
+	normal: '370px',
+	mobile: '165px'
+};

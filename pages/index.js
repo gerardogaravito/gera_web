@@ -3,6 +3,7 @@ import React,{ useState, useEffect } from 'react'
 
 import { Header } from '../components/Header'
 import { Skills } from '../components/Skills'
+import { Projects } from '../components/Projects'
 
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
     <React.Fragment>
       <Header />
       <Skills />
+      <Projects />
     </React.Fragment>
   )
 }

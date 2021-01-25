@@ -1,6 +1,7 @@
 // import App from 'next/app'
 import { GlobalStyle } from '../globalStyles/globalStyles'
 import { Layout } from '../components/Layout'
+import { Loader } from '../components/Loader'
 // import Context from '../Context'
 
 
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
   return(
       <Layout>
         <GlobalStyle />
+        {/* <Loader /> */}
         <Component {...pageProps} />
       </Layout>
   )

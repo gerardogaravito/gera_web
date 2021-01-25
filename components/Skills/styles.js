@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors, mediaQueries } from '../../globalStyles/stylesVariables'
+import { colors, mediaQueries, width } from '../../globalStyles/stylesVariables'
 
 export const Section = styled.section`
   background-color: ${colors.main};
@@ -12,20 +12,9 @@ export const Section = styled.section`
   padding: 125px 0px;
 `
 
-export const Title = styled.h2`
-  color: ${colors.black};
-  font-weight: bold;
-  width: 370px;
-  margin-bottom: 20px;
-
-  @media ${mediaQueries.mobile} {
-    width: 165px;
-  }
-`
-
 export const Container = styled.div`
   height: 180px;
-  width: 370px;
+  width: ${width.normal};
   display: flex;
   overflow: hidden;
   flex-direction: column;
@@ -48,7 +37,7 @@ export const Container = styled.div`
 
   @media ${mediaQueries.mobile} {
     height: auto;
-    width:165px;
+    width:${width.mobile};
 
     & :nth-child(5){
     margin: 10px 0px;
@@ -67,7 +56,7 @@ export const Container = styled.div`
 
 export const Skill = styled.p`
   color: ${colors.black};
-  width: 165px;
+  width: ${width.mobile};
   display: flex;
   align-items: center;
   margin: 10px 0px;

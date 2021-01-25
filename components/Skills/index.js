@@ -1,3 +1,6 @@
+import { SectionTitle } from '../SectionTitle'
+import { SectionLayout } from '../SectionLayout'
+
 import { Container, Section, Title, Skill } from './styles'
 import { FaHtml5, FaCss3Alt } from 'react-icons/fa'
 import { SiJavascript, SiReact, SiStyledComponents, SiNextDotJs } from 'react-icons/si'
@@ -17,8 +20,8 @@ export const Skills = () => {
   ]
 
   return(
-    <Section>
-      <Title>Skills</Title>
+    <SectionLayout>
+      <SectionTitle title='Skills'/>
       <Container>
         <Skill><FaHtml5 size='25px' />{skills[0]}</Skill>
         <Skill><FaCss3Alt size='25px' />{skills[1]}</Skill>
@@ -29,6 +32,6 @@ export const Skills = () => {
         <Skill><DiScrum size='25px' />{skills[6]}</Skill>
         <Skill><DiResponsive size='25px' />{skills[7]}</Skill>
       </Container>
-    </Section>
+    </SectionLayout>
   )
 }
