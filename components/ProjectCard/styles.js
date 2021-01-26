@@ -13,6 +13,12 @@ export const ImgCont = styled.div`
   object-fit: cover;
   width: 300px;
   height: 125px;
+
+  & :only-child {
+    width: 300px;
+    height: 125px;
+    object-fit: cover;
+  }
 `
 
 export const Name = styled.p`

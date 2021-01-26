@@ -1,4 +1,6 @@
 // import App from 'next/app'
+import { useEffect, useState } from 'react'
+
 import { GlobalStyle } from '../globalStyles/globalStyles'
 import { Layout } from '../components/Layout'
 import { Loader } from '../components/Loader'
@@ -6,10 +8,18 @@ import { Loader } from '../components/Loader'
 
 
 function MyApp({ Component, pageProps }) {
+
+  // const [loading, setLoading] = useState()
+
+  // useEffect(setLoading(false),[])
+
   return(
       <Layout>
         <GlobalStyle />
-        {/* <Loader /> */}
+        {/* { 
+        loading? <Loader/> :
+        <Component {...pageProps} />
+        } */}
         <Component {...pageProps} />
       </Layout>
   )
