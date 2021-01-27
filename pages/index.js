@@ -10,12 +10,12 @@ const Home = () => {
 
   const [state, setState] = useState([])
 
-  const Conf = {
-    mode: 'no-cors',
-    headers: {
-      "Content-Type": "application/json"
-    }
-  }
+  // const Conf = {
+  //   mode: 'no-cors',
+  //   headers: {
+  //     "Content-Type": "application/json"
+  //   }
+  // }
 
   // useEffect( async () => {
   //   let response = await fetch('https://gerardogaravito.vercel.app/api/data', Conf)

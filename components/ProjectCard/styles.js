@@ -2,15 +2,6 @@ import styled, { keyframes } from 'styled-components'
 import { colors } from '@globalStyles/stylesVariables'
 import { paintIn } from '@globalStyles/animations'
 
-const paintAnimation = keyframes`
-  from {
-    background-color: ${colors.black};
-  }
-  to {
-    background-color: ${colors.gray};
-  }
-`
-
 export const Card = styled.a`
   background-color: ${colors.black};
   width: 300px;
@@ -18,9 +9,7 @@ export const Card = styled.a`
   margin: 5px;
 
   & :hover {
-    animation-name: ${paintAnimation};
-    animation-duration: 1s;
-
+    ${paintIn};
   }
 `
 
