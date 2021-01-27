@@ -1,6 +1,6 @@
-import { SectionTitle } from '../SectionTitle'
-import { SectionLayout } from '../SectionLayout'
-import { ProjectCard } from '../ProjectCard'
+import { SectionTitle } from '@components/SectionTitle'
+import { SectionLayout } from '@components/SectionLayout'
+import { ProjectCard } from '@components/ProjectCard'
 
 import { Description } from './styles'
 

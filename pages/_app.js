@@ -1,9 +1,9 @@
 // import App from 'next/app'
 import { useEffect, useState } from 'react'
 
-import { GlobalStyle } from '../globalStyles/globalStyles'
-import { Layout } from '../components/Layout'
-import { Loader } from '../components/Loader'
+import { GlobalStyle } from '@globalStyles/globalStyles'
+import { Layout } from '@components/Layout'
+import { Loader } from '@components/Loader'
 // import Context from '../Context'
 
 

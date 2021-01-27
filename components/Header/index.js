@@ -1,7 +1,7 @@
 import { Section, Container, Name, Profession, Bio, Network, Anchor } from './styles'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
-import { colors } from '../../globalStyles/stylesVariables'
+import { colors } from '@globalStyles/stylesVariables'
 
 export const Header = () => {
 

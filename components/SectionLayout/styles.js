@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors } from '../../globalStyles/stylesVariables'
+import { colors } from '@globalStyles/stylesVariables'
 
 export const Section = styled.section`
   background-color: ${colors.main};

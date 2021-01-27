@@ -1,5 +1,5 @@
-import { SectionTitle } from '../SectionTitle'
-import { SectionLayout } from '../SectionLayout'
+import { SectionTitle } from '@components/SectionTitle'
+import { SectionLayout } from '@components/SectionLayout'
 
 import { Container, Section, Title, Skill } from './styles'
 import { FaHtml5, FaCss3Alt } from 'react-icons/fa'

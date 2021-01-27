@@ -1,9 +1,9 @@
 import React,{ useState, useEffect } from 'react'
 // import Context  from '../Context'
 
-import { Header } from '../components/Header'
-import { Skills } from '../components/Skills'
-import { Projects } from '../components/Projects'
+import { Header } from '@components/Header'
+import { Skills } from '@components/Skills'
+import { Projects } from '@components/Projects'
 
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
   //   .then(data => setState(data))
   // }, [])
 
-  console.log(state)
+  // console.log(state)
 
   return (
     <React.Fragment>

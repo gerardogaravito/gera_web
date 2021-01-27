@@ -1,15 +1,26 @@
-import styled from 'styled-components'
-import { colors } from '../../globalStyles/stylesVariables'
-import { paintIn } from '../../globalStyles/animations'
+import styled, { keyframes } from 'styled-components'
+import { colors } from '@globalStyles/stylesVariables'
+import { paintIn } from '@globalStyles/animations'
 
-export const Card = styled.div`
+const paintAnimation = keyframes`
+  from {
+    background-color: ${colors.black};
+  }
+  to {
+    background-color: ${colors.gray};
+  }
+`
+
+export const Card = styled.a`
   background-color: ${colors.black};
   width: 300px;
   height: 200px;
   margin: 5px;
 
   & :hover {
-    ${paintIn};
+    animation-name: ${paintAnimation};
+    animation-duration: 1s;
+
   }
 `
 
@@ -21,8 +32,6 @@ export const ImgCont = styled.div`
   height: 125px;
 
   & :only-child {
-    width: 300px;
-    height: 125px;
     object-fit: cover;
   }
 `

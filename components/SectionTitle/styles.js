@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors, mediaQueries, width } from '../../globalStyles/stylesVariables'
+import { colors, mediaQueries, width } from '@globalStyles/stylesVariables'
 
 export const Title = styled.h2`
   color: ${colors.black};

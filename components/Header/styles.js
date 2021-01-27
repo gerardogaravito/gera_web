@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors, fonts, mediaQueries } from '../../globalStyles/stylesVariables'
+import { colors, fonts, mediaQueries } from '@globalStyles/stylesVariables'
 
 export const Section = styled.section`
   width: 100%;
