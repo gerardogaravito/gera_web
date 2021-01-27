@@ -1,10 +1,16 @@
 import styled from 'styled-components'
 import { colors } from '../../globalStyles/stylesVariables'
+import { paintIn } from '../../globalStyles/animations'
 
 export const Card = styled.div`
   background-color: ${colors.black};
   width: 300px;
   height: 200px;
+  margin: 5px;
+
+  & :hover {
+    ${paintIn};
+  }
 `
 
 export const ImgCont = styled.div`
@@ -24,4 +30,5 @@ export const ImgCont = styled.div`
 export const Name = styled.p`
   color: ${colors.white};
   font-weight: bold;
+  margin: 15px;
 `
