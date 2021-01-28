@@ -15,12 +15,12 @@ const Home = () => {
     redirect: 'follow',
   };
 
-  // useEffect(() => {
-  //   fetch('https://gerardogaravito.vercel.app/api/data', requestOptions)
-  //   .then(response => response.json())
-  //   .then(data => console.log(data))
-  //   .catch(error => console.log('error', error))
-  // }, [])
+  useEffect(() => {
+    fetch('https://gerardogaravito.vercel.app/api/data', requestOptions)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log('error', error))
+  }, [])
 
   // console.log(state)
 

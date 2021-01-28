@@ -35,7 +35,6 @@ import data from '@database/data'
 //   res.end(JSON.stringify(data))
 // }
 
-export default handler
 
 // ----------------------------- nextjs-cors
 async function handler(req, res) {
@@ -49,5 +48,7 @@ async function handler(req, res) {
   });
 
   // Rest of the API logic
-  res.json({ message: 'Hello Everyone!' });
+  res.json(data);
 }
+
+export default handler
