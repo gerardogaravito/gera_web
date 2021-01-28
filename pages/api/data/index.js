@@ -7,7 +7,7 @@ import initMiddleware from '@database/init-middleware'
 const cors = initMiddleware(
   Cors({
     methods: ['GET', 'POST', 'OPTIONS'],
-    origin: false,
+    origin: ['https://gerardogaravito.vercel.app/','http://localhost:3000/'],
   })
 )
 
