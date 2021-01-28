@@ -12,12 +12,13 @@ const Home = () => {
 
   useEffect(() => {
     fetch('https://gerardogaravito.vercel.app/api/data')
+    // window.fetch('/api/data')
     .then(response => response.json())
     .then(data => setState(data))
     .catch(error => console.error('error', error))
   }, [])
 
-  console.log(state)
+  // console.log(state.projects)
 
   return (
     <React.Fragment>
