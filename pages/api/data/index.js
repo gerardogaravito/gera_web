@@ -43,7 +43,7 @@ async function handler(req, res) {
   await NextCors(req, res, {
      // Options
       methods: ['GET'],
-      origin: ['https://gerardogaravito.vercel.app/','http://localhost:3000/'],
+      origin: ['https://gerardogaravito.vercel.app/','http://localhost:'],
      optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
   });
 

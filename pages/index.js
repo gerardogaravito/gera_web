@@ -17,6 +17,8 @@ const Home = () => {
     .catch(error => console.error('error', error))
   }, [])
 
+  console.log(state)
+
   return (
     <React.Fragment>
       <Header />
