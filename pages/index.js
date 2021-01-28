@@ -18,13 +18,11 @@ const Home = () => {
     .catch(error => console.error('error', error))
   }, [])
 
-  // console.log(state.projects)
-
   return (
     <React.Fragment>
       <Header />
       <Skills />
-      <Projects />
+      <Projects {...state}/>
     </React.Fragment>
   )
 }
