@@ -4,7 +4,7 @@ import { ProjectCard } from '@components/ProjectCard'
 
 import { Description } from './styles'
 
-export const Projects = () => {
+export const Projects = ( ) => {
 
   const projects = [
     {

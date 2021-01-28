@@ -10,19 +10,12 @@ const Home = () => {
 
   const [state, setState] = useState([])
 
-  var requestOptions = {
-    method: 'GET',
-    redirect: 'follow',
-  };
-
   useEffect(() => {
-    fetch('https://gerardogaravito.vercel.app/api/data', requestOptions)
+    fetch('https://gerardogaravito.vercel.app/api/data')
     .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log('error', error))
+    .then(data => setState(data))
+    .catch(error => console.error('error', error))
   }, [])
-
-  // console.log(state)
 
   return (
     <React.Fragment>
