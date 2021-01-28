@@ -12,6 +12,8 @@
   "author": "Gerardo Garavito <garavitogerardo@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "next": "^10.0.3",
     "next-images": "^1.7.0",
     "react": "^17.0.1",

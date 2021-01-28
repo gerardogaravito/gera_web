@@ -10,24 +10,17 @@ const Home = () => {
 
   const [state, setState] = useState([])
 
-  // const Conf = {
-  //   mode: 'no-cors',
-  //   headers: {
-  //     "Content-Type": "application/json"
-  //   }
-  // }
+  var requestOptions = {
+    method: 'GET',
+    redirect: 'follow',
+  };
 
-  // useEffect( async () => {
-  //   let response = await fetch('https://gerardogaravito.vercel.app/api/data', Conf)
-  //   console.log(response.json())
-  //   let data = await response.json()
-  // }, [])
-
-  // useEffect(() => {
-  //   fetch('https://gerardogaravito.vercel.app/api/data', Conf)
-  //   .then(response => console.log(response))
-  //   .then(data => setState(data))
-  // }, [])
+  useEffect(() => {
+    fetch('https://gerardogaravito.vercel.app/api/data', requestOptions)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log('error', error))
+  }, [])
 
   // console.log(state)
 
