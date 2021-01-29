@@ -50,18 +50,34 @@ css`
   animation-fill-mode: forwards;
 `
 
-// // from main to white
-const paintInMainWhiteKeyframes = keyframes`
+// // from light gray to Pink
+const paintInLightPinkKeyframes = keyframes`
 from {
-  color: ${colors.main}
+  color: ${colors.light_gray}
 }
 to {
-  color: ${colors.white}
+  color: ${colors.pink}
 }
 `
 
-export const paintInMainWhite = ({ time = '0.5s', type = 'ease' } = {}) =>
+export const paintInLightPink = ({ time = '0.5s', type = 'ease' } = {}) =>
 css`
-  animation: ${time} ${paintInMainWhiteKeyframes} ${type};
+  animation: ${time} ${paintInLightPinkKeyframes} ${type};
+  animation-fill-mode: forwards;
+`
+
+// // from black to pink
+const paintInPinkKeyframes = keyframes`
+from {
+  color: ${colors.black}
+}
+to {
+  color: ${colors.pink};
+}
+`
+
+export const paintInPink = ({ time = '0.5s', type = 'ease' } = {}) =>
+css`
+  animation: ${time} ${paintInPinkKeyframes} ${type};
   animation-fill-mode: forwards;
 `

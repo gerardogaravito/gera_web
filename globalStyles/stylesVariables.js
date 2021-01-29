@@ -1,10 +1,11 @@
 export const colors = {
   main: '#ecebe4', // bone
-  black: '#1c1c1c', // black
+  black: '#111111', // black
   white: '#fafaff',
   light_gray: '#eef0f2',
 	gray: '#daddd8',
-	red: '#c4302b'
+	red: '#c4302b',
+	pink: '#fac5c5'
 }
 
 export const fonts = {
@@ -20,7 +21,7 @@ export const fonts = {
 // media queries
 const mediaSize = {
 	mobile: '420px',
-	tablet: '720px',
+	tablet: '620px',
 	miniDesktop: '920px',
 	littleDesktop: '1315px',
 	desktop: '1440px',

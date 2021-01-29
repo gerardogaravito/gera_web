@@ -1,9 +1,10 @@
-import React,{ useState, useEffect } from 'react'
+import React from 'react'
 // import Context  from '../Context'
 
 import { Header } from '@components/Header'
 import { Skills } from '@components/Skills'
 import { Projects } from '@components/Projects'
+import { Footer } from '@components/Footer'
 
 export const getServerSideProps = async () => {
   const response = await fetch('https://gerardogaravito.vercel.app/api/data')
@@ -30,6 +31,7 @@ const Home = ({ data }) => {
       <Header {...data}/>
       <Skills />
       <Projects {...data}/>
+      <Footer {...data}/>
     </React.Fragment>
   )
 }

@@ -1,8 +1,9 @@
 import { SectionTitle } from '@components/SectionTitle'
 import { SectionLayout } from '@components/SectionLayout'
 import { ProjectCard } from '@components/ProjectCard'
+import { ProjectDescription } from '@components/ProjectDescription'
 
-import { Description } from './styles'
+import { Description, Project } from './styles'
 
 export const Projects = ({ projects }) => {
 
@@ -12,7 +13,10 @@ export const Projects = ({ projects }) => {
       <Description>Some projects where I've contributed as a Front-End Developer</Description>
       {
         projects.map(item => (
-          <ProjectCard {...item} key={item.id}/>
+          <Project>
+            <ProjectCard {...item} key={item.id}/>
+            <ProjectDescription {...item} key={item.id}/>
+          </Project>
         ))
       }
     </SectionLayout>

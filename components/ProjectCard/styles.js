@@ -6,7 +6,7 @@ export const Card = styled.a`
   background-color: ${colors.black};
   width: 300px;
   height: 200px;
-  margin: 5px;
+  margin: 5px 0px 5px 5px;
   text-decoration: none;
   position: relative;
 
@@ -28,6 +28,10 @@ export const Card = styled.a`
     & p {
       ${paintInBlack}
     }
+  }
+
+  @media ${mediaQueries.tablet} {
+    margin: 5px 5px 0px 5px;
   }
 
   @media ${mediaQueries.mobile} {

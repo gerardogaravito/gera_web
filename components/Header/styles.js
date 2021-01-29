@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { colors, fonts, mediaQueries } from '@globalStyles/stylesVariables'
-import { paintInMainWhite } from '@globalStyles/animations'
+import { paintInLightPink } from '@globalStyles/animations'
 
 export const Section = styled.section`
   width: 100%;
@@ -22,17 +22,23 @@ export const Container = styled.div`
 export const Name = styled.h1`
   color: ${colors.white};
   margin-bottom: 5px;
+  font-weight: bold;
+  background: linear-gradient(${colors.white}, ${colors.pink});
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 `
 export const Profession = styled.h3`
-  color: ${colors.main};
+  color: ${colors.light_gray};
   font-family: ${fonts.font_mono};
   margin-bottom: 30px;
 `
 
 export const Bio = styled.p`
-  color: ${colors.main};
+  color: ${colors.light_gray};
   font-family: ${fonts.font_mono};
   margin-bottom: 30px;
+  text-align: justify;
 `
 
 export const Network = styled.div`
@@ -42,9 +48,9 @@ export const Network = styled.div`
 `
 
 export const Anchor = styled.a`
-  color: ${colors.main};
+  color: ${colors.light_gray};
 
   &:hover {
-    ${paintInMainWhite}
+    ${paintInLightPink}
   }
 `

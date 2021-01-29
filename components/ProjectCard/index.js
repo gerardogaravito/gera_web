@@ -3,7 +3,7 @@ import { AiFillYoutube } from 'react-icons/ai'
 
 import { Card, ImgCont, Name } from './styles'
 
-export const ProjectCard = ({ name, description, image_alt, demo_url, image_url, repo_url, tools }) => {
+export const ProjectCard = ({ name, image_alt, demo_url, image_url }) => {
 
   return(
     <Card href={demo_url} target='_blank' alt='demo youtube video'>
