@@ -1,6 +1,7 @@
 import { Section, Container, Name, Profession, Bio, Network, Anchor } from './styles'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { GrInstagram } from "react-icons/gr";
+import { GrInstagram, GrMail } from "react-icons/gr";
+import { GoMail } from "react-icons/go";
 import { colors } from '@globalStyles/stylesVariables'
 
 export const Header = ({ personal }) => {
@@ -13,13 +14,16 @@ export const Header = ({ personal }) => {
         <Bio>Member of Platzi Master and <br/>learning to be a Software Engineer at UANL.</Bio>
         <Network>
           <Anchor href={personal.contact.github} target='_blank' alt='Git Hub'>
-            <FaGithub color={colors.main} size='25px'/>
+            <FaGithub size='30px'/>
           </Anchor>
           <Anchor href={personal.contact.linkedin} target='_blank' alt='Linkedin'>
-            <FaLinkedin color={colors.main} size='25px'/>
+            <FaLinkedin size='30px'/>
           </Anchor>
           <Anchor href={personal.contact.instagram} target='_blank' alt='Instagram'>
-            <GrInstagram color={colors.main} size='25px'/>
+            <GrInstagram size='30px'/>
+          </Anchor>
+          <Anchor href={`mailto:${personal.contact.email.gmail}`} alt='email'>
+            <GrMail size='30px'/>
           </Anchor>
         </Network>
       </Container>

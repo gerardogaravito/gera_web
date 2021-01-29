@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { colors, fonts, mediaQueries } from '@globalStyles/stylesVariables'
+import { paintInMainWhite } from '@globalStyles/animations'
 
 export const Section = styled.section`
   width: 100%;
@@ -35,11 +36,15 @@ export const Bio = styled.p`
 `
 
 export const Network = styled.div`
-  width: 125px;
+  width: 195px;
   display: flex;
   justify-content: space-between;
 `
 
 export const Anchor = styled.a`
+  color: ${colors.main};
 
+  &:hover {
+    ${paintInMainWhite}
+  }
 `

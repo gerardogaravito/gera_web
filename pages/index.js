@@ -25,15 +25,6 @@ export const getServerSideProps = async () => {
 
 const Home = ({ data }) => {
 
-  // const [state, setState] = useState([])
-
-  // useEffect(() => {
-  //   fetch('https://gerardogaravito.vercel.app/api/data')
-  //   .then(response => response.json())
-  //   .then(data => setState(data))
-  //   .catch(error => console.error('error', error))
-  // }, [])
-
   return (
     <React.Fragment>
       <Header {...data}/>
