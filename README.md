@@ -2,18 +2,25 @@
 
 website url: https://gerardogaravito.vercel.app/
 
-```javascript
-import React from 'react'
+### Run the project
+- Clone the project
+`git clone [url]`
 
-export Tools = () => {
+- Install dependencies
+`npm install`
 
-	return(
-		<ul>
-			<li>React</li>
-			<li>NextJS</li>
-			<li>loading...</li>
-		</ul>
-	)
-}
+- Run develop enviroment
+`npm run dev`
 
-```
+- Build production project
+`npm run build`
+
+- Run production project
+`npm run start`
+
+### Tools
+- [React](http://es.reactjs.org/ "React")
+- [Next JS](http://nextjs.org/ "Next JS")
+- [Styled-Components](http://styled-components.com/ "Styled-Components")
+- [React Icons](https://react-icons.github.io/react-icons/ "React Icons")
+- Deployment by [Vercel](http://vercel.com "Vercel")
