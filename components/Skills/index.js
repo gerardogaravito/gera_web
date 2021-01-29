@@ -8,6 +8,7 @@ import { DiScrum, DiResponsive } from 'react-icons/di'
 
 export const Skills = () => {
 
+  // aquí dejo hardcodeadas las skills porque necesito verlas para saber cuál icono de react-icons usar
   const skills = [
     'HTML',
     'CSS',

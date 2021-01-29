@@ -15,5 +15,4 @@ export const paintIn = ({ time = '1s', type = 'ease' } = {}) =>
   css`
     animation: ${time} ${paintInKeyframes} ${type};
     animation-fill-mode: forwards;
-
   `
