@@ -13,9 +13,9 @@ export const Projects = ({ projects }) => {
       <Description>Some projects where I've contributed as a Front-End Developer</Description>
       {
         projects.map(item => (
-          <Project>
-            <ProjectCard {...item} key={item.id}/>
-            <ProjectDescription {...item} key={item.id}/>
+          <Project key={item.id}>
+            <ProjectCard {...item}/>
+            <ProjectDescription {...item}/>
           </Project>
         ))
       }

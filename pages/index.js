@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 // import Context  from '../Context'
 
 import { Header } from '@components/Header'
@@ -28,6 +29,9 @@ const Home = ({ data }) => {
 
   return (
     <React.Fragment>
+      <Head>
+        <title>{data.personal.name} {data.personal.dadlast} | {data.personal.profession}</title>
+      </Head>
       <Header {...data}/>
       <Skills />
       <Projects {...data}/>
