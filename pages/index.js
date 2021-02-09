@@ -7,6 +7,8 @@ import { Skills } from '@components/Skills'
 import { Projects } from '@components/Projects'
 import { Footer } from '@components/Footer'
 
+//este texto es un test para saber si el cambio de http a ssh funcionó
+
 export const getServerSideProps = async () => {
   const response = await fetch('https://gerardogaravito.vercel.app/api/data')
   const data = await response.json()
