@@ -2,6 +2,8 @@
 
 website url: https://gerardogaravito.vercel.app/
 
+![](hhttps://github.com/gerardogaravito/gera_web/blob/main/public/gera_web.png)
+
 ### Run the project
 - Clone the project
 `git clone [url]`
