@@ -45,7 +45,7 @@ const Home = ({ data }) => {
         description: 'Web Developer using frontend technologies such as React, React-Native and Styled-Components',
         images: [
           {
-            url: 'https://github.com/gerardogaravito/gera_web/blob/main/public/gera_web.png',
+            url: '/gera_web.png',
             width: 800,
             height: 600,
             alt: 'Gerardo Garavito Website picture',
