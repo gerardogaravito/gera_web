@@ -12,7 +12,7 @@ export const ProjectDescription = ({ name, description, repo_url, tools}) => {
       <Tools>
         {
           tools.map(tool => (
-            <Tool>{tool}</Tool>
+            <Tool key={tool} >{tool}</Tool>
           ))
         }
       </Tools>
