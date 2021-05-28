@@ -10,7 +10,7 @@ export const Footer = ({ personal }) => {
     <SectionLayout>
       <Container>
         <Signature>By Gerardo Garavito 👨🏽‍💻</Signature>
-        <Anchor href={`mailto:${personal.contact.email.gmail}`} alt='email'>
+        <Anchor href={`mailto:${personal.contact.email.uanl}`} alt='email'>
           <GrMail size='30px'/>
         </Anchor>
         <Anchor href='https://github.com/gerardogaravito/gera_web' target='_blank' alt='repository of this project'>

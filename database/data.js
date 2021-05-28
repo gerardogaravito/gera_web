@@ -7,6 +7,7 @@ const data = {
     contact: {
       email: {
         gmail: 'garavitogerardo@gmail.com',
+        uanl: 'gerardo.garavitogrc@uanl.edu.mx'
       },
       linkedin: 'https://www.linkedin.com/in/gerardo-garavito-b408811b2/',
       github: 'https://github.com/gerardogaravito',

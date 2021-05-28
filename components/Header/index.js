@@ -20,7 +20,7 @@ export const Header = ({ personal }) => {
           <Anchor href={personal.contact.instagram} target='_blank' alt='Instagram'>
             <GrInstagram size='30px'/>
           </Anchor>
-          <Anchor href={`mailto:${personal.contact.email.gmail}`} alt='email'>
+          <Anchor href={`mailto:${personal.contact.email.uanl}`} alt='email'>
             <GrMail size='30px'/>
           </Anchor>
         </Network>
